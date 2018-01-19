@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=medium-dpi" />
+
+  <link rel="stylesheet"  href="libs/jQM-flat/jquery.mobile.flatui.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <title>CPR</title>
+  <style type="text/css">
+    #btn_navigasi{
+      background: #039BE5;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div id="home-page" data-role="page">
+     <div data-role="header" data-position="fixed">
+      <h1>CPR GUIDLINES 2105</h1>
+    </div>
+    <div data-role="content" id="content" data-position="absolute">
+      <div id="logoContainer" class="centerText">
+        <img src="img/logo.png" id="logo"/>
+        <br/>
+        <h2>Time Saving Is Life Saving</h2>
+      </div>
+    </div>
+    <div id="menu">
+      <a data-theme="d" href="#second-page" data-role="button">Next</a>
+    </div>
+  </div>
+
+  <!-- page 2 -->
+  <div  id="second-page" data-role="page">
+    <div data-role="header" data-id="header1" data-position="fixed" class="ui-header">
+      <!-- <a href="#" data-rel="back" data-role="button" data-icon="arrow-l" data-inline="true" >Back</a> -->
+      <h1>CPR MENU</h1>
+      <a href="#" data-rel="back" data-role="button" data-icon="flat-phone"></a>
+    </div>
+    
+    <div data-role="content"  class="big-text" id="content2">
+      <p>Pijat jantung dapat dilakukan dalam keadaan seperti di bawah ini</p>
+      <br/>
+      <a data-icon="flat-heart" data-theme="f" href="#page-tiga"  data-role="button">SERANGAN JANTUNG</a>
+      <br/>
+      <h3 style="background: transparent;color: #000" class="ui-bar ui-bar-a ui-corner-all">
+        PASTIKAN PASIEN TIDAK SADAR
+      </h3>
+      <br/>
+      <h3 style="background: transparent;color: #000" class="ui-bar ui-bar-a ui-corner-all">
+        TIDAK BERNAFAS DENGAN NORMAL
+      </h3>
+
+    </div>
+
+    <div data-theme="a" data-role="footer" data-position="fixed" data-id="footer" style="text-align: center;">
+      <a href="#" data-rel="back" data-role="button" data-icon="flat-ui-phone">HENTIKAN PIJAT JANTUNG</a>
+    </div>
+  </div>
+  <!-- batas -->
+  <!-- page4 -->
+  <div id="page-tiga" data-role="page">
+   <h3 class="ui-bar ui-bar-a ui-corner-all">SERANGAN JANTUNG</h3>
+   <br/>
+   <h2 style="margin:0 0 0 10px">Pelaksanaan Pijat Jantung</h2>
+   <ul style="font-size:1.5em">
+    <li>3A (Amankan Diri,Amankan Pasien,Amankan Lingkungan)</li>
+    <li>Call For Help 
+      <a href="#" data-role="button" class="icon-phone" data-iconpos="notext" data-theme="b" data-inline="true">Home</a>atau aktifkan sistem tanggap darurat (Minta seseorang untuk melakukan )
+    </li>
+    <li><p>Ambil AED ( Automatic External Defibrilator ) atau peralatan gawat darurat (Minta seseorang untuk melakukan )</p></li>
+  </ul>
+  <br/>
+  <div data-role="content" id="btnPage3">
+   <a data-theme="f" href="#page-empat"  data-role="button">Lanjutkan Pijat Jantung</a>
+ </div>
+</div>
+
+<!-- page 4 -->
+<div style="text-align: left;" id="page-empat" data-role="page">
+  <h3 class="ui-bar ui-bar-a">CEK TINGKAT KESADARAN ( AVPU )</h3>
+  <br/>
+  <ol style="font-size:1.5em;text-align: left;padding:20px 0 5px 20px">
+    <li>Cek tingkat kesadaran pasien dengan cara memanggil namanya</li>
+    <li>
+      Test tingkat kesadaran dengan merangsang nyeri
+      <ol type="a" style="padding:20px">
+        <li style="text-align: justify;">Tekan Tulang strenum</li>
+        <li style="text-align: justify;">Tekan Pangkal Kuku Tangan</li>
+        <li style="text-align: justify;">Tekan Tulang batas alis mata (Lakukan salah satu)</li>
+      </ol>
+    </li>
+  </ol>  
+  <h2>Apakah Korban Sadar ?</h2>
+  <br/>
+  <fieldset class="ui-grid-b" id="btn_pilih_page4">
+    <div class="ui-block-a" style="width:25%">
+      <a data-theme="e" href="#page-lima"  data-role="button">Yes</a>
+    </div>
+    <div class="ui-block-b" style="width:25%">
+      <a id="no_page_4" data-theme="g" href="#page-delapan"  data-role="button" >No</a>
+    </div>
+    <div class="ui-block-b" style="width:50%;text-align: left;">
+      <a data-theme="g" href="#page-enam"  data-role="button" >Sumbatan Nafas</a>
+    </div>
+  </fieldset>
+</div>
+
+<!-- page 5 -->
+<div style="text-align: left;" id="page-lima" data-role="page">
+  <div role="main" class="ui-content">
+    <div class="article">
+      <p>
+        <img width="100%" height="100%" src="img/ambulan.jpg" alt="Ambulance">
+      </p>
+      <ol style="font-size: 1.5em;font-family: arial;padding:10px 30px 0 30px">
+        <li style="text-align: justify;">Pantau Hingga tenaga medis tiba</li>
+        <li style="text-align: justify;">Ajak Bicara Korban</li>
+      </ol>
+    </div>
+  </div>
+  <fieldset class="ui-grid-b" id="btn_pilih_page5">
+    <h2 style="width:100%;margin:0 0 0 5px">Kondisi Pasien Semakin Memburuk ?</h2>
+    <div class="ui-block-a" style="width:25%">
+      <a data-theme="e" href="#page-empat"  data-role="button">Yes</a>
+    </div>
+    <div class="ui-block-b" style="width:25%">
+      <a style="pointer-events: none;" data-theme="g" href="#"  data-role="button" >No</a>
+    </div>
+    <div class="ui-block-b" style="width:50%;text-align: left;">
+      <a data-theme="g" href="#page-enam" data-role="button" >Sumbatan Nafas</a>
+    </div>
+  </fieldset>
+</div>
+
+<!-- page 6 -->
+<div style="text-align: left;" id="page-enam" data-role="page">
+  <div role="main" class="ui-content" style="height: 200px;border: 1px solid #000">
+    <div class="article">
+      <p>Video</p>
+    </div>
+  </div>
+  <ol style="font-size: 1.5em;font-family: arial;padding:10px 20px 0 30px">
+    <li style="text-align: justify;">Miringkan Pasien (Jika Pasien Non Trauma)</li>
+    <li style="text-align: justify;">Log Rolling (Jika Pasien Disebabkan Trauma)</li>
+    <li style="text-align: justify;">Bersihkan Mulut dari benda Asing</li>
+    <li style="text-align: justify;">Cross Fingger</li>
+  </ol>
+  <fieldset class="ui-grid-b" id="btn_pilih_page6">
+    <h2 style="width:100%;margin:0 0 0 5px">Kondisi Pasien Semakin Memburuk ?</h2>
+    <div class="ui-block-a" style="width:25%">
+      <a data-theme="e" href="#page-tujuh"  data-role="button">Yes</a>
+    </div>
+    <div class="ui-block-b" style="width:25%">
+      <a style="pointer-events: none;" data-theme="g" data-role="button" >No</a>
+    </div>
+    <div class="ui-block-b" style="width:50%;text-align: left;">
+      <a data-theme="g" data-role="button" >Sumbatan Nafas</a>
+    </div>
+  </fieldset>
+</div>
+<!-- open airway -->
+<!-- page 7 -->
+<div style="text-align: left;" id="page-tujuh" data-role="page">
+  <h2>OPEN AIRWAY</h2>
+  <div role="main" class="ui-content" style="height: 150px;border: 1px solid #000">
+   <div class="article">
+    <p>Video</p>
+  </div>
+</div>
+<ol style="font-size: 1.5em;font-family: arial;padding:5px 20px 0 30px">
+  <li style="text-align: justify;">Lakukan Head Tilt -Chin Lift</li>
+  <li style="text-align: justify;">Lihat rongga mulut dari cairan, benda asing</li>
+  <li style="text-align: justify;">Dengarkan suara nafas tambahan : Ngorok, Berkumur - kumur atau suara melengking</li>
+  <li style="text-align: justify;">Cek hembusan nafas</li>
+</ol>
+<fieldset class="ui-grid-b" id="btn_pilih_page7">
+  <h2 style="width:100%;margin:0 0 0 5px">ADAKAH SUMBATAN JALAN NAFAS ?</h2>
+  <div class="ui-block-a" style="width:25%">
+    <a data-theme="e" href="#page-enam" data-role="button" >Yes</a>
+  </div>
+  <div class="ui-block-b" style="width:25%">
+    <a data-theme="g" id="btnOpenAirway" href="#page-delapan"  data-role="button" >No</a>
+  </div>
+  <div class="ui-block-b" style="width:50%;text-align: left;">
+    <a data-theme="g" href="#"  data-role="button" >Sumbatan Nafas</a>
+  </div>
+</fieldset>
+</div>
+
+<!-- page 8 -->
+<div style="text-align: left;" id="page-delapan" data-role="page">
+  <b><h2>PASTIKAN JALAN NAFAS BEBAS</h2></b>
+  <div role="main" class="ui-content" style="height: 150px;border: 1px solid #000">
+   <div class="article">
+    <p>Video</p>
+  </div>
+</div>
+<ol style="font-size: 1.5em;font-family: arial;padding:5px 20px 0 30px">
+  <li style="text-align: justify;">Letakkan Tangan di setengah strenum bagian bawah</li>
+  <li style="text-align: justify;">Tekna antara 5-6 cm (2 - 2.4 inc)</li>
+  <li style="text-align: justify;">Lakukan Kompresi dengan kecepatan 100 - 120 kali / menit</li>
+  <li style="text-align: justify;">Gunkan AED segera, setelah tersedia</li>
+</ol>
+<fieldset class="ui-grid-a" id="btn_pilih_page8">
+  <h2 style="width:100%;margin:0 0 0 5px">LAKUKAN 30 PIJATAN</h2>
+  <div class="ui-block-a">
+    <a data-theme="e" id="btnDelapan" href="#page-sembilan" data-role="button" >Yes</a>
+  </div>
+  <div class="ui-block-b">
+    <a data-theme="g" href="#page-empat"  data-role="button" >No</a>
+  </div>
+</fieldset>
+<fieldset class="ui-grid-a" id="btn_aed8">
+  <h2 style="width:100%;margin:0 0 0 5px">AED TERSEDIA</h2>
+  <div class="ui-block-a">
+    <a data-theme="e" href="#page-sepuluh" data-role="button" >Yes</a>
+  </div>
+  <div class="ui-block-b">
+    <a data-theme="g" href="#"  data-role="button" >No</a>
+  </div>
+</fieldset>
+</div>
+
+<!-- page 9 -->
+<div style="text-align: left;" id="page-sembilan" data-role="page">
+  <b><h2>DUA PERNAFASAN PERTOLONGAN</h2></b>
+  <div role="main" class="ui-content" style="height: 100%;">
+    <div class="article" style="border: 1px solid #000;height: 100px">
+      <p>Video</p>
+    </div>
+    <ol style="font-size: 1.5em;font-family: arial;padding:5px 20px 0 30px">
+      <li style="text-align: justify;">Buka Mulut korban. Jika ada sumbatan lakukan <i>Head Till</i></li>
+      <li style="text-align: justify;">Tutup Hidung Korban saat memberikan nafas bantuan</li>
+      <li style="text-align: justify;">Tiup dengan kecepatan 1 detik (Asal dada terangkat)</li>
+      <li style="text-align: justify;">Lepaskan Hidung korban setelah memberikan nafas bantuan</li>
+    </ol>
+    <div style="border:0.1px solid #F5F5F5;background: #F5F5F5">
+      <center><b><h2>( JIKA TIDAK MAU, ATAU TIDAK MAMPU MAKA PIJAT JANTUNG SAJA )</h2></b></center>
+    </div>
+  </div>
+  <fieldset class="ui-grid-a" id="btn_pilih_page9">
+    <h2 style="width:100%;margin:0 0 0 5px">SUDAH DILAKUKAN ?</h2>
+    <div class="ui-block-a">
+      <a data-theme="e" href="#page-delapan" data-role="button" >Yes</a>
+    </div>
+    <div class="ui-block-b">
+      <a data-theme="g" href="#page-delapan"  data-role="button" >No</a>
+    </div>
+  </fieldset>
+</div>
+<!-- page 10 -->
+<div style="text-align: left;" id="page-sepuluh" data-role="page">
+  <center><b><h2>PERIKSA RITME, APAKAH BISA DIKEJUT</h2></b></center>
+  <div role="main" class="ui-content" style="height: 100%;">
+    <div id="page10-article" class="article" style="border: 1px solid #000;height: 250px">
+      <p>Video</p>
+    </div>
+    <fieldset class="ui-grid-a" id="btn_pilih_page10">
+      <div class="ui-block-a">
+        <a data-theme="e" href="#popupYes" data-rel="popup" data-position-to="window" data-role="button" >Yes</a>
+      </div>
+      <div class="ui-block-b">
+        <a data-theme="g" href="#popupNo" data-rel="popup" data-position-to="window" data-role="button" >No</a>
+      </div>
+      <div class="ui-block-a" style="width: 100%">
+        <a id="donePage10" data-theme="c" data-position="fixed" data-role="button" >Done</a>
+      </div>
+    </fieldset>
+    <!-- pop up Yes -->
+    <div data-role="popup" id="popupYes" data-theme="a" data-corners="false" style="background:#F5F5F5;border:1px solid #F5F5F5">
+      <a href="#" data-rel="back" class="ui-btn ui-btn-b ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right"></a>
+      <div role="main" class="ui-content">
+       <ol style="font-size: 1.5em;font-family: arial;padding:5px 20px 0 30px">
+         <li style="text-align: justify;">Nyalakan <i style="font-weight: bold;">AED</i></li>
+         <li style="text-align: justify;">Buka Baju Korban</li>
+         <li style="text-align: justify;">Pasang <i style="font-weight: bold;">PADDLE</i> Pada Dada Korban</li>
+         <li style="text-align: justify;">Tekan Analise</li>
+         <li style="text-align: justify;">Berikan 1 kejut, Segera dilanjutkan <i style="font-weight: bold;">PIJAT JANTUNG</i> selama
+           2 menit (Hingga AED memperbolehkan pemeriksaan Ritme)</li>
+           <li style="text-align: justify;">Lanjutkan hingga tenaga <i style="font-weight: bold;">ALS</i> mengambil alih atau korban mulai bergerak</li>
+         </ol>
+       </div>
+     </div>
+     <!-- pop up No -->
+     <div data-role="popup" id="popupNo" data-theme="a" data-corners="false" style="background:#F5F5F5;border:1px solid #F5F5F5">
+      <a href="#" data-rel="back" class="ui-btn ui-btn-b ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right"></a>
+      <div role="main" class="ui-content">
+       <ol style="font-size: 1.5em;font-family: arial;padding:5px 20px 0 30px">
+         <li style="text-align: justify;">Segera lanjutkan pijat jantung kurang lebih 2 menit (hingga <i style="font-weight: bold;">AED</i> memperbolehkan pemeriksaan ritme)</li>
+         <li style="text-align: justify;">Lanjutkan Hingga tenaga <i style="font-weight: bold;">ALS</i> mengambil Alih atau Korban mulai bergerak</li>
+       </ol>
+     </div>
+   </div>
+ </div>
+
+ <script type="text/javascript" src="libs/fastclick.min.js"></script>
+ <script type="text/javascript" src="phonegap.js"></script>
+ <script type="text/javascript" src="libs/jquery-2.0.3.min.js"></script>
+ <script type="text/javascript" src="libs/jQueryMobile/jquery.mobile-1.3.2.min.js"></script>
+ <script type="text/javascript" src="js/index.js"></script>
+
+ <script type="text/javascript">
+  app.initialize();
+</script>
+<script type="text/javascript">
+  $('#content').css('margin-top',($(window).height())/4);
+  $('#btnPage3').css('margin-top',($(window).height())/4);
+  $('fieldset').css('margin-top',($(window).height())/4);
+  $('#btn_pilih_page9').css('margin-top',($(window).height())/7);
+  $('#btn_pilih_page10').css('margin-top',($(window).height()-$('#page10-article').height())/3);
+</script>
+<script type="text/javascript">
+  $('#btn_aed8').hide();
+  $('#btnOpenAirway').click(function(){
+    $('#btn_aed8').hide();
+  });
+  $('#page-empat').click(function(){
+    $('#btn_pilih_page8').css('margin-top',($(window).height())/10);
+    $('#btn_aed8').css('margin-top',($(window).height())/20);
+    $('#btn_aed8').show();
+  });
+
+  $('#btnDelapan').click(function(){
+   $.mobile.navigate( "#page-delapan",{transition : "slide"});
+   $.mobile.urlHistory.clearForward();
+   $('#btn_pilih_page9').show();
+ });
+</script>
+<script type="text/javascript">
+  $('#donePage10').click(function(){
+   $.mobile.navigate( "#page-delapan",{transition : "slide"});
+   // $.mobile.urlHistory.clearForward();
+ });
+</script>
+</body>
+</html>
